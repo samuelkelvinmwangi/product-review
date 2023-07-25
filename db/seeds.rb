@@ -17,10 +17,30 @@ product4 = Product.create(name: "Ballpoint Pens", price: 2)
 product5 = Product.create(name: "Scotch Tape", price: 3)
 
 puts "Creating reviews..."
-# *****************************************************************
-# * TODO: create reviews! Remember, a review belongs to a product *
-# * and a review belongs to an user.                              *
-# *****************************************************************
-# Create Reviews Here
+Review.create(user: user1, product: product1, star_rating: 4, comment: "Great product!")
+Review.create(user: user1, product: product2, star_rating: 3, comment: "average!")
+Review.create(user: user1, product: product3, star_rating: 5, comment: "supab!")
+Review.create(user: user1, product: product4, star_rating: 1, comment: "Poor quality!")
+Review.create(user: user1, product: product5, star_rating: 2, comment: "Not enough!")
+Review.create(user: user2, product: product1, star_rating: 3, comment: "Good product!")
+Review.create(user: user2, product: product2, star_rating: 4, comment: "average!")
+Review.create(user: user2, product: product3, star_rating: 5, comment: "supab!")
+Review.create(user: user2, product: product4, star_rating: 2, comment: "Poor")
+Review.create(user: user2, product: product5, star_rating: 3, comment: "Enough!")
+Review.create(user: user3, product: product1, star_rating: 1, comment: "I hate it!")
+Review.create(user: user3, product: product2, star_rating: 4, comment: "good!")
+Review.create(user: user3, product: product3, star_rating: 1, comment: "poor!")
+Review.create(user: user3, product: product4, star_rating: 5, comment: "Well done!")
+Review.create(user: user3, product: product5, star_rating: 3, comment: "Average!")
+Review.create(user: user4, product: product1, star_rating: 3, comment: "average!")
+Review.create(user: user4, product: product2, star_rating: 3, comment: "average!")
+Review.create(user: user4, product: product3, star_rating: 3, comment: "average!")
+Review.create(user: user4, product: product4, star_rating: 3, comment: "average!")
+Review.create(user: user4, product: product5, star_rating: 3, comment: "average!")
+Review.create(user: user5, product: product1, star_rating: 2, comment: "average!")
+Review.create(user: user5, product: product2, star_rating: 1, comment: "I'm disappointed!")
+Review.create(user: user5, product: product3, star_rating: 4, comment: "Can do  better!")
+Review.create(user: user5, product: product4, star_rating: 3, comment: "average!")
+Review.create(user: user5, product: product5, star_rating: 5, comment: "Excellent!")
 
 puts "Seeding done!"
