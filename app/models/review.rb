@@ -1,3 +1,3 @@
-class CreateReviews < ActiveRecord::Base
+class CreateReview < ActiveRecord::Base
     
 end
