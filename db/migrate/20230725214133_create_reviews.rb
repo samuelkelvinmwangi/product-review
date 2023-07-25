@@ -1,6 +1,6 @@
 class CreateReviews < ActiveRecord::Migration[6.1]
   def change
-    create_table do |t|
+    create_table :reviews do |t|
       t.integer :star_rating
       t.string :comment
       t.belongs_to :user, foreign_key: true
