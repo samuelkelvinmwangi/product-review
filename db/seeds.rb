@@ -3,7 +3,6 @@ Bundler.require(:default)
 
 # Now require Faker after loading the gems
 require 'faker'
-Faker::Config.locale = 'en-US'
 
 # This will delete any existing rows from the Product and User tables
 # so you can run the seed file multiple times without having duplicate entries in your database
@@ -12,9 +11,9 @@ Product.destroy_all
 User.destroy_all
 
 puts "Creating users..."
-user1 = User.create(name: "John")
-user2 = User.create(name: "Mary")
-user3 = User.create(name: "Bob")
+user1 = User.create(name: Faker::Name.name)
+user2 = User.create(name: Faker::Name.name)
+user3 = User.create(name: Faker::Name.name)
 
 puts "Creating products..."
 product1 = Product.create(name: "Stapler", price: 10)
